@@ -26,6 +26,6 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: artifact1
-        path: ./cicd2/bin/Debug/netcoreapp3.1/publish/
+        path: ./cicdfirst/bin/Debug/netcoreapp3.1/publish/
 
       
