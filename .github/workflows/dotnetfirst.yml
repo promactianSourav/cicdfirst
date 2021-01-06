@@ -23,4 +23,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Publish
       run: dotnet publish --no-build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: artifact1
+        path: path/to/artifact/
+
       
