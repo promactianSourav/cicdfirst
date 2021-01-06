@@ -13,7 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: mkdir -p path/to/artifact
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
@@ -27,6 +26,6 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: artifact1
-        path: path/to/artifact/
+        path: ./cicd2/bin/Debug/netcoreapp3.1/publish/
 
       
