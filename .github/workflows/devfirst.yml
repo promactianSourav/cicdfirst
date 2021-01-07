@@ -20,9 +20,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --configuration Debug --no-restore
     - name: Publish
-      run: dotnet publish --no-build
+      run: dotnet publish --configuration Debug --no-build
     - uses: actions/upload-artifact@v2
       with:
         name: artifact1
